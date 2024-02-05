@@ -1,341 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Facebook - log in or sign up</title>
-    <link rel="icon" href="Facebook_Logo_2023.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <style>
-        /* universal selector used to select every element */
-        * {
-            font-family: Helvetica, Arial, sans-serif;
-            /* border: 1px solid red; */
-        }
-
-        /* for the body of the html */
-        body {
-
-            background-color: whitesmoke;
-        }
-
-        .divkobox {
-            /* border: 2px solid black; */
-            height: 360px;
-            width: 400px;
-            margin: 0 auto;
-            border-radius: 5px;
-            background-color: white;
-            /* box-shadow:  0 0 1px , 0 0 1px #9e9d9d; */
-
-        }
-
-        img {
-            margin: 0;
-            padding: 0;
-            height: 110px;
-            width: 344px;
-
-        }
-
-        /* for the div containing the image */
-        #logo {
-
-            /* border: 2px solid red; */
-
-            height: 100px;
-            display: flex;
-            /*Helps to center the facebook logo to the center*/
-            justify-content: center;
-        }
-
-        /* for the box containing the login information 
- css for the frame box which contains login info */
-        .box {
-            /*helps to arrang the elements inside the field set in a column format*/
-            display: flex;
-            flex-direction: column;
-            height: 350px;
-            width: 360px;
-            margin: 15px auto;
-            padding-top: 15px;
-            
-            /* border: 2px solid lime; */
-
-
-
-        }
-
-        .connect {
-
-            /* border: 2px solid black; */
-            /*label is an inline element it only occupies the amount occupied by the text
-so to center the text,the label must be truned to a block element */
-            width: 370px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 24px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: 400;
-        }
-
-        /* used to arrange logo and connect to people tex in same div */
-        .logoandconnect {
-            /* border: 2px solid green; */
-            padding-bottom: 30px;
-        }
-
-
-        /* @media only screen and (min-width: 50px)   {
-    .box 
-{
-  
-    
-}  
-} */
-
-
-        /* only tragets the first two elements email and password */
-        .emailandpassword {
-            display: flex;
-            flex-direction: column;
-            /* border : 2px solid red; */
-
-
-
-        }
-
-        /* Targets every input element */
-        input {
-            margin: 5px;
-            /* Space between two inputs */
-            height: 50px;
-            border-radius: 8px;
-            border: 1.5px solid grey;
-            outline: none;
-            padding-top: 0;
-            text-indent: 10px;
-            font-size: large;
-
-
-        }
-
-        /* used to chang the color of input when clicked on it doesnot work yet */
-        input:focus {
-            border: 1px solid blue;
-            box-shadow: 0 0 2px #00b894;
-        }
-
-
-        .loginbutton {
-            background-color: #1877f2;
-            font-family: inherit;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 20px;
-            height: 48px;
-            padding: 0;
-            width: 350px;
-            margin-top: 35px;
-            margin-left: 5px;
-            
-        }
-
-        button:hover {
-            cursor: pointer;
-        }
-
-        /* for the div in forgot password link */
-        .forgot {
-            /* border: 1px solid red; */
-            text-align: center;
-            margin-top: 15px;
-        }
-
-        /* for the text "Forgot password"  */
-        .link {
-            font-family: inherit;
-            text-decoration: none;
-            color: #1877f2;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        /* when hovered over the forgot password link the cursor cahnges to pointer 
-and underline appears under it  */
-        .link:hover {
-            cursor: pointer;
-            text-decoration: underline;
-        }
-
-        /* used to create a line below forgot password */
-        .line {
-            border-bottom: 1px solid #d3d8dd;
-            ;
-            margin: 20px 16px;
-        }
-
-        /* div container for create a new account button */
-        .creatediv {
-            display: flex;
-            justify-content: center;
-            /* border: 1px solid rgb(6, 5, 17); */
-            height: 48px;
-            padding-top: 5px
-
-        }
-
-        /* css for the create a new account button  */
-        .createbutton {
-            font-family: inherit;
-            width: 200px;
-            background-color: #42b72a;
-            border: none;
-            border-radius: 6px;
-            font-size: 17px;
-            color: white;
-
-
-        }
-
-        /* when hovered over ther create new account button
-apply the following css properties */
-        .createbutton:hover {
-            color: rgb(216, 225, 234);
-            background-color: #41ae2b;
-        }
-
-        /* create a page for celebrity */
-        .createapage {
-            /* border: 1px solid red; */
-            margin: 25px;
-            text-align: center;
-        }
-
-        /* used to make the text bold */
-        .bold {
-            font-weight: 600;
-            font-size: smaller;
-        }
-        ::placeholder {
-            font-size: 17px;
-    padding: 14px 0px;
-    width: 330px;
-    font-family: inherit;
-}
-.withlogoandbox
-{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
- 
-}
-@media screen and (min-width: 900px){
-    .withlogoandbox
-    {
-        display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-padding : 100px;
+    <title>Document</title>
+    <style>*{
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-}
-.ablack
-{
-    color :black;
-    text-decoration: none;
-}
-.ablack:hover
-{
-    text-decoration: underline;
-}
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card{
+        width: 300px;
+        height: 350px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 5px;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
 
-/* to align the password toggle button */
-form i{
-    display: inline;
-    /* border: 1px solid red; */
-    margin-left: 325px;
+    }
+    body{
+        padding: 2rem;
+        background-color: #f2f2f2;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        background-color: rgb(14, 14, 172);
+        border-radius: 5px;
+        border:2px solid rgb(14, 14, 172)
 
-    margin-top: -40px;
-    cursor: pointer;
-    /* z-index: 1; */
-}
-
+    }
+    a:hover{
+        background: transparent;
+        color: rgb(14, 14, 172);
+    }
+    h1{
+        font-weight: 500;
+    }
+    .desc{
+       color: #929291; 
+       text-align: justify;
+    }
+        
     </style>
 </head>
-
 <body>
-    <main>
-        <div class="withlogoandbox">
-        <div class="logoandconnect">
-            <div class="logo" id="logo">
-                <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg">
-            </div>
-            <h3 class="connect">Connect with friends and the world around you on Facebook.</h3>
+    <h1 style="text-align: center;">My Projects</h1>
+    <div class="container">
+        <div class="card">
+            <h1>
+                Facebook
+            </h1>
+            <div class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sed iure commodi veritatis dolore aliquam? Aut repudiandae provident nemo quae, ratione inventore recusandae minima libero ipsam, officia hic ex vero.</div>
+            <a href="/facebook(real).html">view</a>
         </div>
-        <div class="boxandcreate">
-        <div class="divkobox">
-            <form class="box">
-                <div class="emailandpassword">
-                    <input type="email" placeholder="Email or Phonenumber">
-                    
-                    <input type="password" name="password" id="password"placeholder="Password">
-                    <i class="bi bi-eye-slash" id="togglePassword"></i>
-                    
-                </div>
-
-                <div class="login" id="loginid">
-                    <button type="submit" class="loginbutton">Log in</button>
-                    <div class="forgot">
-                        <a class="link" href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"> Forgot password?</a>
-                    </div>
-                    <div class="line"></div>
-                </div>
-                <div class="creatediv">
-                    <button class="createbutton">
-                        Create new account
-                    </button>
-                </div>
-
-            </form>
+        <div class="card">
+            <h1>
+                psg
+            </h1>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis delectus deleniti repudiandae similique ipsam non inventore placeat, aliquid quo eaque veritatis consectetur. Iure animi fuga illum nulla. Cumque, natus hic.</div>
+            <a href="/psg.html">view</a>
         </div>
-        <div class="createapage">
-            <label id="sizeoftext">
-                <span class="bold"><a class="ablack"href="https://www.facebook.com/pages/create/?ref_type=registration_form">Create a Page</a></span>
-                for a celebrity, brand or business.
-            </label>
+        <div class="card">
+            <h1>
+                nointernet
+            </h1>
+            <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit, ullam nam iure repudiandae voluptate? Voluptates quibusdam aliquam qui facere reiciendis nemo impedit laboriosam accusamus, exercitationem, officiis quod ullam beatae?</div>
+            <a href="/nointernet.html">view</a>
         </div>
     </div>
-</div>
-   
-    </main>
-
-
-    </div>
-    <script>
-        const togglePassword = document.querySelector("#togglePassword");
-        const password = document.querySelector("#password");
-
-        togglePassword.addEventListener("click", function () {
-            // toggle the type attribute
-            const type = password.getAttribute("type") === "password" ? "text" : "password";
-            password.setAttribute("type", type);
-            
-            // toggle the icon
-            this.classList.toggle("bi-eye");
-        });
-
-        // prevent form submit
-        const form = document.querySelector("form");
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-        });
-    </script>
-
 </body>
-
 </html>
