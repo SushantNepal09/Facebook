@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <title>
+        Facebook - log in or sign up</title>
+    <!-- <link rel="icon" href=
+    "Facebook_Logo_2023.png"
+              type="image/x-icon"> -->
+              
+<style>
+    /* universal selector used to select every element */
+    * 
+    {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    /* for the body of the html */
+    body
+    {
+       
+        background-color: whitesmoke;
+    }
+
+    .divkobox
+    {
+        border: 2px solid black;
+        height: 380px;
+        width : 380px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: white;
+        
+    }
+img
+{
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    width: 344px;
+
+}
+/* for the div containing the image */
+#logo 
+{
+   
+    border: 2px solid red;
+    height: 80px;
+    display: flex; /*Helps to center the facebook logo to the center*/
+    justify-content: center;
+}
+/* for the box containing the login information 
+ css for the frame box which contains login info */
+.box 
+{
+    /*helps to arrang the elements inside the field set in a column format*/
+display: flex;
+flex-direction: column;
+height: 380px;
+width: 350px;
+margin : 15px auto;
+border: 2px solid lime;
+
+
+}
+.connect
+{
+
+    border: 2px solid black;
+    /*label is an inline element it only occupies the amount occupied by the text
+so to center the text,the label must be truned to a block element */
+  width: auto;
+  margin: 0 auto;
+ text-align : center;
+ font-size: 24px;
+ font-family: Helvetica, Arial, sans-serif;
+ font-weight: 400;
+}
+/* used to arrange logo and connect to people tex in same div */
+.logoandconnect
+{
+    border: 2px solid green;
+    padding-bottom: 30px;
+}
+
+
+/* @media only screen and (min-width: 50px)   {
+    .box 
+{
+  
+    
+}  
+} */
+
+
+/* only tragets the first two elements email and password */
+.emailandpassword
+{
+    display: flex;
+    flex-direction: column;
+border : 2px solid red;
+
+
+
+}
+/* Targets every input element */
+input
+{
+margin: 5px;  /* Space between two inputs */
+height: 50px;
+border-radius: 8px;
+border : 1.5px solid grey;
+outline: none;
+padding-top: 0;
+
+
+}
+/* used to chang the color of input when clicked on it doesnot work yet */
+input:focus{
+    border: 1px solid blue;
+}
+
+
+.loginbutton
+{
+    background-color: #1877f2;
+    font-family: inherit;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    height: 48px;
+    padding: 0 16px;
+    width: 350px;
+    margin-top: 15px;
+}
+button:hover
+{
+   cursor: pointer;
+}
+/* for the div in forgot password link */
+.forgot
+{
+    border : 1px solid red;
+    text-align: center;
+    margin-top : 15px;
+}
+/* for the text "Forgot password"  */
+.link{
+    font-family: inherit;
+    text-decoration: none;
+    color : #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* when hovered over the forgot password link the cursor cahnges to pointer 
+and underline appears under it  */
+.link:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* used to create a line below forgot password */
+.line
+{
+    border-bottom : 1px solid #d3d8dd;;
+    margin: 20px 16px;
+}
+/* div container for create a new account button */
+.creatediv
+{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(6, 5, 17);
+    height: 50px;
+}
+/* css for the create a new account button  */
+.createbutton
+{
+    font-family: inherit;
+   width: 200px;
+   background-color: #42b72a;
+   border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: white;
+
+}
+/* when hovered over ther create new account button
+apply the following css properties */
+.createbutton:hover
+{
+    color : rgb(216, 225, 234);
+    background-color: #41ae2b;
+}
+/* create a page for celebrity */
+.createapage
+{
+border: 1px solid red;
+margin : 25px;
+text-align: center;
+}
+/* used to make the text bold */
+.bold
+{
+    font-weight: 600;
+    font-size: smaller;
+}
+</style>
+
+</head>
+<body>
+    <main>
+        <div class="logoandconnect">
+        <div class="logo" id="logo">
+          <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg">  
+        </div>
+        <h3 class="connect">Connect with friends and the world around you on Facebook.</h3>
+    </div> <div class="divkobox">
+        <form class="box">
+       <div class="emailandpassword">
+<input type="email" placeholder="Email or Phonenumber" >
+
+    <input type="password" placeholder="Password">
+</div> 
+
+       <div class="login" id="loginid">
+        <button type="submit" class="loginbutton">Log in</button>
+        <div class="forgot">
+           <a class="link"href=""> Forgot password?</a>
+        </div>
+       <div class="line"></div>
+       </div>
+          <div class="creatediv">
+            <button class="createbutton">
+                Create new account
+            </button>
+          </div>
+            
+        </form>
+    </div>
+    <div class="createapage">
+        <label id="sizeoftext">
+            <span class="bold">Create a Page</span>
+            for a celebrity, brand or business.
+        </label>
+    </div>
+    </main>
+
+  
+</div>
+<script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password");
+
+    togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        
+        // toggle the icon
+        this.classList.toggle("bi-eye");
+    });
+
+    // prevent form submit
+    const form = document.querySelector("form");
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+    });
+</script>
+    
+</body>
+</html>
