@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube.com</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+/* indicates the whole page of youtube
+where grid is used to seperate it into three parts  */
+        .wholepage {
+           height: 100vw;
+            display: grid;
+            grid-template-columns: 250px 1fr ;
+            grid-template-rows: 100px 1fr 1fr;
+        }
+
+
+
+
+        .header {
+            /* border: 4px solid lightblue; */
+            /* background-color: red; */
+        }
+/* This is the topmost header part of youtube where logo search button and other buttons are 
+placed */
+        .header1 {
+            border: 3px solid red;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            /* background-color: red; */
+
+        }
+/* this is the navigation bar that is on the side */
+        .navigation {
+            /* grid-column-start: 1;
+    grid-column-end: 4; */
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: black;
+        }
+/* This is the main-page of the youtube */
+        .mainpage {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: blue;
+            border: 3px solid white;
+            
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="wholepage">
+
+
+        <div class="header header1">
+            <div class="head" id="start">
+               <img src="">
+            </div>
+        </div>
+
+        <div class="header navigation"></div>
+        <div class="header mainpage"><p>        </p></div>
+
+        <div class="header header3"></div>
+
+
+
+    </div>
 </body>
+
 </html>
