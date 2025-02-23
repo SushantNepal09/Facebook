@@ -3,85 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>*{
-        font-family: sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .container{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .card{
-        width: 300px;
-        height: 350px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        border-radius: 5px;
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-
-    }
-    body{
-        padding: 2rem;
-        background-color: #f2f2f2;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-        padding: 0.5rem 1rem;
-        background-color: rgb(14, 14, 172);
-        border-radius: 5px;
-        border:2px solid rgb(14, 14, 172)
-
-    }
-    a:hover{
-        background: transparent;
-        color: rgb(14, 14, 172);
-    }
-    h1{
-        font-weight: 500;
-    }
-    .desc{
-       color: #929291; 
-       text-align: justify;
-    }
-        
+    <title>My Projects</title>
+    <style>
+        * {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 2rem;
+            background-color: #e8e8e8;
+            font-size: 16px;
+            color: #333;
+        }
+        h1 {
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .card {
+            width: 300px;
+            height: 400px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card h1 {
+            font-size: 1.8rem;
+            color: #1a73e8;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .desc {
+            color: #707070;
+            text-align: justify;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            background-color: #1a73e8;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #0d5dbb;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">My Projects</h1>
+    <h1>My Projects</h1>
     <div class="container">
         <div class="card">
-            <h1>
-                Facebook
-            </h1>
-            <div class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sed iure commodi veritatis dolore aliquam? Aut repudiandae provident nemo quae, ratione inventore recusandae minima libero ipsam, officia hic ex vero.</div>
-            <a href="facebookreal.html">view</a>
+            <h1>Facebook</h1>
+            <div class="desc">
+                A social networking site that connects people around the world. Users can post updates, share photos, send messages, and stay connected with friends and family. Experience social media at its finest.
+            </div>
+            <a href="facebookreal.html">View Project</a>
         </div>
         <div class="card">
-            <h1>
-                psg
-            </h1>
-            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis delectus deleniti repudiandae similique ipsam non inventore placeat, aliquid quo eaque veritatis consectetur. Iure animi fuga illum nulla. Cumque, natus hic.</div>
-            <a href="psg.html">view</a>
+            <h1>PSG</h1>
+            <div class="desc">
+                A fictional project centered around the world of football. Explore the Paris Saint-Germain club, its star players, and the exciting matches that bring fans together. Get the latest news and updates about PSG.
+            </div>
+            <a href="psg.html">View Project</a>
         </div>
         <div class="card">
-            <h1>
-                nointernet
-            </h1>
-            <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit, ullam nam iure repudiandae voluptate? Voluptates quibusdam aliquam qui facere reiciendis nemo impedit laboriosam accusamus, exercitationem, officiis quod ullam beatae?</div>
-            <a href="nointernet.html">view</a>
+            <h1>No Internet</h1>
+            <div class="desc">
+                An offline project designed for users without an active internet connection. It provides a variety of fun and useful tools that can be used anytime, anywhere, ensuring entertainment even when offline.
+            </div>
+            <a href="nointernet.html">View Project</a>
         </div>
-      
     </div>
 </body>
 </html>
